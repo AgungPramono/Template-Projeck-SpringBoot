@@ -1,0 +1,16 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color:#ffffff;
+}
+.jumbotron{
+  max-width: 500px;
+  max-height: 500px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color:#EA0000;
+  margin: 0 auto;
+}
+.text-danger{
+    text-colo:#ffffff;
+}

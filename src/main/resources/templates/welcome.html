@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+ Copyright (c) 2015 Agung Pramono <agungpermadi13@gmail.com || www.github.com/agung pramono>.
+ All rights reserved.
+
+Silahkan digunakan dengan bebas / dimodifikasi
+Dengan tetap mencantumkan nama @author dan Referensi / Source
+Terima Kasih atas Kerjasamanya.
+
+ welcome.java
+
+ Created on Oct 31, 2015, 9:40:09 AM
+-->
+<html  xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Universitas ABC | Sistem Akademik</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="/css/bootstrap-theme.min.css"/> 
+        
+    </head>
+    <body>
+        <div class="container">
+            <h1>Welcome to SpringBoot Application</h1>
+            <ul>
+                <li th:text="'waktu : ' + ${waktu}">Waktu : </li>
+            </ul>
+            <form name="f" th:action="@{/logout}" method="post" >
+                <input type="submit" value="Logout" class="btn btn-danger"/>
+            </form>
+        </div>
+    </body>
+</html>
